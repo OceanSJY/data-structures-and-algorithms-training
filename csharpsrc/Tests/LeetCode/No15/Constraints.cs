@@ -4,6 +4,8 @@
 
 namespace Tests.LeetCode.No15
 {
+    using System;
+
     /// <summary>
     /// The constraints of LeetCode No.15 question: Three Sum.
     /// </summary>
@@ -22,11 +24,11 @@ namespace Tests.LeetCode.No15
         /// <summary>
         /// The max value of each element in test array.
         /// </summary>
-        public const int MinValue = -105;
+        public static readonly int MinValue = -(int)Math.Pow(10, 5);
 
         /// <summary>
         /// The min value of each element in test array.
         /// </summary>
-        public const int MaxValue = 105;
+        public static readonly int MaxValue = (int)Math.Pow(10, 5);
     }
 }

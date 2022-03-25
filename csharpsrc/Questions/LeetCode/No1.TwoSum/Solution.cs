@@ -15,10 +15,18 @@ namespace Questions.LeetCode.No1.TwoSum
         /// <inheritdoc />
         public int[] TwoSum(int[] nums, int target)
         {
-            // Step 0: Handles the special or invalid cases.
-            if (nums == null || !nums.Any())
+            // Step 0: Handles the invalid cases.
+            if (nums == null || nums.Length < 2)
             {
                 return Array.Empty<int>();
+            }
+
+            // Step 1: Handles the special case.
+            if (nums.Length == 2)
+            {
+                return nums.Sum() == target
+                    ? new[] { 0, 1 }
+                    : Array.Empty<int>();
             }
 
             // Step 1: Handles the normal cases.

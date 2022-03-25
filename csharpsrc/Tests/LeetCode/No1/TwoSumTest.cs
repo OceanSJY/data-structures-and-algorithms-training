@@ -75,7 +75,9 @@ namespace Tests.LeetCode.No1
         [TestMethod]
         public void CheckTwoSumSolutionPerformance()
         {
+#if RELEASE
             BenchmarkRunner.Run<TwoSumTest>();
+#endif
         }
 
         /// <inheritdoc />

@@ -2,32 +2,32 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No1
+namespace Tests.LeetCode.No18
 {
     using System;
 
     /// <summary>
-    /// The constraints of LeetCode No.1 question: Two Sum.
+    /// The constraints of LeetCode No.18 question: Four Sum.
     /// </summary>
     public static class Constraints
     {
         /// <summary>
-        /// The min length of test array.
+        /// The min length of test numbers array.
         /// </summary>
-        public const int MinLength = 2;
+        public const int MinLength = 1;
 
         /// <summary>
-        /// The max length of test array.
+        /// The max length of test numbers array.
         /// </summary>
-        public const int MaxLength = 104;
+        public const int MaxLength = 200;
 
         /// <summary>
-        /// The min value of each element in test array or test target.
+        /// The min value of each element in test array or target.
         /// </summary>
-        public static readonly int MinValue = (int)Math.Pow(-10, 9);
+        public static readonly int MinValue = -(int)Math.Pow(10, 9);
 
         /// <summary>
-        /// The max value of each element in test array or test target.
+        /// The max value of each element in test array or target.
         /// </summary>
         public static readonly int MaxValue = (int)Math.Pow(10, 9);
     }
