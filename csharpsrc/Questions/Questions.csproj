@@ -1,12 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\leetcode\questions\Question1.md" Link="LeetCode\No1.TwoSum\Question1.md" />
+    <None Include="..\..\leetcode\questions\Question15.md" Link="LeetCode\No15.ThreeSum\Question15.md" />
   </ItemGroup>
 
   <ItemGroup>
