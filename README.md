@@ -13,5 +13,7 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No18.FourSum/Solution.cs), the result is correct however the performance is not good enough
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No18.FourSum/OfficialAnswer.cs)
 
-
+#### LeetCode No.16 question: [Three Sum Closest](leetcode/questions/Question16.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No16.ThreeSumClosest/Solution.cs), the result is correct however the performance is very poor
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No16.ThreeSumClosest/OfficialAnswer.cs)
 

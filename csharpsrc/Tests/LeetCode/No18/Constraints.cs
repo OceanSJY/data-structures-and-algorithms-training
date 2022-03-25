@@ -9,7 +9,7 @@ namespace Tests.LeetCode.No18
     /// <summary>
     /// The constraints of LeetCode No.18 question: Four Sum.
     /// </summary>
-    public static class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test numbers array.
