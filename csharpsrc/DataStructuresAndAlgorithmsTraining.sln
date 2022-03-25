@@ -5,6 +5,7 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA622098-C19D-4BA6-A68D-9264650C2D3D}"
 	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject
