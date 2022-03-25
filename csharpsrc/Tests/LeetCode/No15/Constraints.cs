@@ -9,7 +9,7 @@ namespace Tests.LeetCode.No15
     /// <summary>
     /// The constraints of LeetCode No.15 question: Three Sum.
     /// </summary>
-    public static class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test array.

@@ -9,7 +9,7 @@ namespace Tests.LeetCode.No1
     /// <summary>
     /// The constraints of LeetCode No.1 question: Two Sum.
     /// </summary>
-    public static class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test array.
