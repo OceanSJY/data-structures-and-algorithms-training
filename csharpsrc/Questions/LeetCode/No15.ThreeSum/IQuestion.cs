@@ -5,11 +5,12 @@
 namespace Questions.LeetCode.No15.ThreeSum
 {
     using System.Collections.Generic;
+    using Questions.Interfaces;
 
     /// <summary>
     /// The LeetCode No.15 question: Three Sum.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Gets all triplets from number array that the sum of triplets equals to zero.
