@@ -14,6 +14,7 @@
     <None Include="..\..\leetcode\questions\Question16.md" Link="LeetCode\No16.ThreeSumClosest\Question16.md" />
     <None Include="..\..\leetcode\questions\Question18.md" Link="LeetCode\No18.FourSum\Question18.md" />
     <None Include="..\..\leetcode\questions\Question3.md" Link="LeetCode\No3.LongestSubstringWithoutRepeatingCharacters\Question3.md" />
+    <None Include="..\..\leetcode\questions\Question9.md" Link="LeetCode\No9.PalindromeNumber\Question9.md" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,6 +9,10 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/OfficialAnswer.cs) 
 
+#### LeetCode No.9 question: [Palindrome Number](leetcode/questions/Question9.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/Solution.cs)
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/OfficialAnswer.cs)
+
 #### LeetCode No.15 question: [Three Sum](leetcode/questions/Question15.md)
 * [C#] [Solution](csharpsrc/Questions//LeetCode/No15.ThreeSum/Solution.cs), the result is correct however the performance is very poor
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No15.ThreeSum/OfficialAnswer.cs)
