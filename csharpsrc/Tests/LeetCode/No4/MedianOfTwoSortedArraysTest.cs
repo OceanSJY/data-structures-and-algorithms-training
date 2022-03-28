@@ -5,6 +5,7 @@
 namespace Tests.LeetCode.No4
 {
     using System;
+    using System.Linq;
     using BenchmarkDotNet.Attributes;
     using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -47,6 +48,11 @@ namespace Tests.LeetCode.No4
         private readonly IQuestion officialAnswerB;
 
         /// <summary>
+        /// The expected results from official answers.
+        /// </summary>
+        private readonly double[] expectedResultsFromOfficialAnswers;
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="MedianOfTwoSortedArraysTest"/> class.
         /// </summary>
         public MedianOfTwoSortedArraysTest()
@@ -76,7 +82,43 @@ namespace Tests.LeetCode.No4
                 this.testNums2[index] = random.Next(Constraints.MinValue, Constraints.MaxValue);
                 Array.Sort(this.testNums2);
             }
+
+            this.expectedResultsFromOfficialAnswers = new[]
+            {
+                this.officialAnswerA.FindMedianSortedArrays(this.testNums1, this.testNums2),
+                this.officialAnswerB.FindMedianSortedArrays(this.testNums1, this.testNums2),
+            };
         }
+
+        /// <summary>
+        /// The solutions of LeetCode No.4 question: Median of Two Sorted Arrays.
+        /// </summary>
+        public IQuestion[] Solutions => new[]
+        {
+            this.solutionA,
+            this.solutionB,
+        };
+
+        /// <summary>
+        /// The official answers of LeetCode No.4 question: Median of Two Sorted Arrays.
+        /// </summary>
+        public IQuestion[] OfficialAnswers => new[]
+        {
+            this.officialAnswerA,
+            this.officialAnswerB,
+        };
+
+        /// <summary>
+        /// Gets or sets current solution.
+        /// </summary>
+        [ParamsSource(nameof(Solutions))]
+        public IQuestion CurrentSolution { get; set; }
+
+        /// <summary>
+        /// Gets or sets the current official answer.
+        /// </summary>
+        [ParamsSource(nameof(OfficialAnswers))]
+        public IQuestion CurrentOfficialAnswer { get; set; }
 
         /// <summary>
         /// Verifies the result from MedianOfTwoSortedArrays solution A whether it is as same as the result from official answers.
@@ -84,12 +126,11 @@ namespace Tests.LeetCode.No4
         [TestMethod]
         public void VerifyMedianOfTwoSortedArraysSolutionAResult()
         {
-            var expectedResultA = this.GetResultFromOfficialAnswer();
-            var expectedResultB = this.GetResultFromOfficialAnswerB();
+            this.CurrentSolution = this.Solutions.First();
             var actualResultA = this.GetResultFromSolution();
 
-            Assert.AreEqual(expectedResultA, actualResultA);
-            Assert.AreEqual(expectedResultB, actualResultA);
+            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.First(), actualResultA);
+            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.Last(), actualResultA);
         }
 
         /// <summary>
@@ -98,12 +139,11 @@ namespace Tests.LeetCode.No4
         [TestMethod]
         public void VerifyMedianOfTwoSortedArraysSolutionBResult()
         {
-            var expectedResultA = this.GetResultFromOfficialAnswer();
-            var expectedResultB = this.GetResultFromOfficialAnswerB();
-            var actualResultB = this.GetResultFromSolutionB();
+            this.CurrentSolution = this.Solutions.Last();
+            var actualResultB = this.GetResultFromSolution();
 
-            Assert.AreEqual(expectedResultA, actualResultB);
-            Assert.AreEqual(expectedResultB, actualResultB);
+            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.First(), actualResultB);
+            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.Last(), actualResultB);
         }
 
         /// <summary>
@@ -121,35 +161,14 @@ namespace Tests.LeetCode.No4
         [Benchmark]
         public override double GetResultFromSolution()
         {
-            return this.solutionA.FindMedianSortedArrays(this.testNums1, this.testNums2);
-        }
-
-        /// <summary>
-        /// Gets the result from solution B.
-        /// </summary>
-        /// <returns>The result from solution B.</returns>
-
-        [Benchmark]
-        public double GetResultFromSolutionB()
-        {
-            return this.solutionB.FindMedianSortedArrays(this.testNums1, this.testNums2);
+            return this.CurrentSolution.FindMedianSortedArrays(this.testNums1, this.testNums2);
         }
 
         /// <inheritdoc />
         [Benchmark]
         public override double GetResultFromOfficialAnswer()
         {
-            return this.officialAnswerA.FindMedianSortedArrays(this.testNums1, this.testNums2);
-        }
-
-        /// <summary>
-        /// Gets the result from official answer B.
-        /// </summary>
-        /// <returns>The result from official answer B.</returns>
-        [Benchmark]
-        public double GetResultFromOfficialAnswerB()
-        {
-            return this.officialAnswerB.FindMedianSortedArrays(this.testNums1, this.testNums2);
+            return this.CurrentOfficialAnswer.FindMedianSortedArrays(this.testNums1, this.testNums2);
         }
     }
 }
