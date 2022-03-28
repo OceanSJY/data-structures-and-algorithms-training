@@ -1,5 +1,12 @@
 # Data Structures and Algorithms Training
 ## This repository contains implementations or code segments of some classic data structures, algorithms and solutions of LeetCode questions.
+
+### Algorithms Training
+#### Bubble Sort Algorithms:
+* [C#] [BubbleSortHelper](csharpsrc/Algorithms/Sorting/BubbleSortHelper.cs)
+
+***
+
 ### LeetCode Questions:
 #### LeetCode No.1 question: [Two Sum](leetcode/questions/Question1.md) 
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No1.TwoSum/Solution.cs)

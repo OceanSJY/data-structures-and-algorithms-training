@@ -16,7 +16,7 @@ namespace Tests.LeetCode.No18
     /// The test class of LeetCode No.18 question: Four Sum.
     /// </summary>
     [TestClass]
-    public class FourSumTest : BaseTest<IList<IList<int>>>
+    public class FourSumTest : LeetCodeBaseTestCase<IList<IList<int>>>
     {
         /// <summary>
         /// The test numbers.

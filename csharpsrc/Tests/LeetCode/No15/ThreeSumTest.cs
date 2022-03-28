@@ -16,7 +16,7 @@ namespace Tests.LeetCode.No15
     /// The test class of LeetCode No.15 question: Three Sum.
     /// </summary>
     [TestClass]
-    public class ThreeSumTest : BaseTest<IList<IList<int>>>
+    public class ThreeSumTest : LeetCodeBaseTestCase<IList<IList<int>>>
     {
         /// <summary>
         /// The test numbers.

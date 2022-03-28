@@ -14,7 +14,7 @@ namespace Tests.LeetCode.No3
     /// The test class of LeetCode No.3 question: Longest Substring without Repeating Characters.
     /// </summary>
     [TestClass]
-    public class LongestSubstringWithoutRepeatingCharactersTest : BaseTest<int>
+    public class LongestSubstringWithoutRepeatingCharactersTest : LeetCodeBaseTestCase<int>
     {
         /// <summary>
         /// The test string.

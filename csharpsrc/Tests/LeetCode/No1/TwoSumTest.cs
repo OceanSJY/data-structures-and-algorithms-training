@@ -15,7 +15,7 @@ namespace Tests.LeetCode.No1
     /// The test class of LeetCode No.1 question: Two Sum.
     /// </summary>
     [TestClass]
-    public class TwoSumTest : BaseTest<int[]>
+    public class TwoSumTest : LeetCodeBaseTestCase<int[]>
     {
         /// <summary>
         /// The test number array.
