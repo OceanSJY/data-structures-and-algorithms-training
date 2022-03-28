@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Algorithms.Sorting
+namespace Algorithms.SortingHelpers
 {
     using System;
     using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace Algorithms.Sorting
     public static class BubbleSortHelper
     {
         /// <summary>
-        /// Sorts the elements in source by bubble.
+        /// Sorts the elements in source collection by bubble algorithm.
         /// </summary>
         /// <typeparam name="T">The data type of each element in source.</typeparam>
         /// <param name="source">The source collection.</param>
