@@ -2,8 +2,10 @@
 ## This repository contains implementations or code segments of some classic data structures, algorithms and solutions of LeetCode questions.
 
 ### Algorithms Training
-#### Bubble Sort Algorithms:
+#### Bubble Sort Algorithm:
 * [C#] [BubbleSortHelper](csharpsrc/Algorithms/SortingHelpers/BubbleSortHelper.cs)
+
+#### Merging Sort Algorithm:
 * [C#] [MergingSortHelper](csharpsrc/Algorithms/SortingHelpers/MergingSortHelper.cs)
 
 ***
