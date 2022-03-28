@@ -2,12 +2,11 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Running;
-
 namespace Tests.LeetCode.No9
 {
     using System;
+    using BenchmarkDotNet.Attributes;
+    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No9.PalindromeNumber;
 

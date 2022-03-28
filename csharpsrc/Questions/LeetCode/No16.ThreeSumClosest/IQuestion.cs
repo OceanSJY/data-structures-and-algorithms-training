@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No16.ThreeSumClosest
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.16 question: Three Sum Closest.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Gets the sum of triplets which is closest to target.
