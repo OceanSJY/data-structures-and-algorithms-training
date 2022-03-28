@@ -4,12 +4,10 @@
 
 namespace Questions.LeetCode.No3.LongestSubstringWithoutRepeatingCharacters
 {
-    using Questions.Interfaces;
-
     /// <summary>
     /// The LeetCode No.3 question: Longest Substring without Repeating Characters.
     /// </summary>
-    public interface IQuestion : IBaseQuestion
+    public interface IQuestion
     {
         /// <summary>
         /// Gets the length of longest substring.

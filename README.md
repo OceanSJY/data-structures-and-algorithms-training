@@ -9,12 +9,6 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/OfficialAnswer.cs) 
 
-#### LeetCode No.4 question: [Median of Two Sorted Arrays](leetcode/questions/Question4.md)
-* [C#] [Solution A](csharpsrc/Questions/LeetCode/No4.MedianOfTwoSortedArrays/SolutionA.cs)
-* [C#] [Solution B](csharpsrc/Questions/LeetCode/No4.MedianOfTwoSortedArrays/SolutionB.cs)
-* [C#] [Official Answer A](csharpsrc/Questions/LeetCode/No4.MedianOfTwoSortedArrays/OfficialAnswerA.cs)
-* [C#] [Official Answer B](csharpsrc/Questions/LeetCode/No4.MedianOfTwoSortedArrays/OfficialAnswerB.cs)
-
 #### LeetCode No.9 question: [Palindrome Number](leetcode/questions/Question9.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/OfficialAnswer.cs)
@@ -30,3 +24,5 @@
 #### LeetCode No.18 question: [Four Sum](leetcode/questions/Question18.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No18.FourSum/Solution.cs), the result is correct however the performance is not good enough
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No18.FourSum/OfficialAnswer.cs)
+
+

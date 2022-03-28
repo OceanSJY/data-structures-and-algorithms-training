@@ -4,6 +4,8 @@
 
 namespace Tests
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     /// <summary>
     /// The base test class which required generic output value.
     /// </summary>

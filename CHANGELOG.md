@@ -1,8 +1,6 @@
 # Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
-* [03/28/2022] Update the test case (C#) of No.4 question to avoid duplicate and un-readable code.
-* [03/28/2022] Implement LeetCode No.4 question: [Median of Two Sorted Arrays](leetcode/questions/Question4.md)] by C#.
 * [03/27/2022] Implement LeetCode No.9 question: [Palindrome Number](leetcode/questions/Question9.md) by C#.
 * [03/26/2022] Implement LeetCode No.3 question: [Longest Substring without Repeating Characters](leetcode/questions/Question3.md) by C#.
 * [03/25/2022] Implement LeetCode No.16 question: [Three Sum Closest](leetcode/questions/Question16.md) by C#.
