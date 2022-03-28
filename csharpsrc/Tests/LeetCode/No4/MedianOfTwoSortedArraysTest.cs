@@ -69,7 +69,7 @@ namespace Tests.LeetCode.No4
                 this.testNums1 = new int[random.Next(Constraints.MinLength, Constraints.MaxLength)];
                 this.testNums2 = new int[random.Next(Constraints.MinLength, Constraints.MaxLength)];
             }
-            while (this.testNums1.Length + this.testNums2.Length > 2000);
+            while (this.testNums1.Length + this.testNums2.Length > 2 * Constraints.MaxLength);
 
             for (var index = 0; index < this.testNums1.Length; index++)
             {
