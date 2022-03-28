@@ -5,12 +5,11 @@
 namespace Questions.LeetCode.No18.FourSum
 {
     using System.Collections.Generic;
-    using Questions.Interfaces;
 
     /// <summary>
     /// The LeetCode No.18 question: Four Sum.
     /// </summary>
-    public interface IQuestion : IBaseQuestion
+    public interface IQuestion
     {
         /// <summary>
         /// Gets all unique quadruplets from numbers array and their sum need to equals to target.

@@ -4,12 +4,10 @@
 
 namespace Questions.LeetCode.No1.TwoSum
 {
-    using Questions.Interfaces;
-
     /// <summary>
     /// The LeetCode No.1 question: Two Sum.
     /// </summary>
-    public interface IQuestion : IBaseQuestion
+    public interface IQuestion
     {
         /// <summary>
         /// Gets the indexes of 2 numbers that their sum equals to target.
