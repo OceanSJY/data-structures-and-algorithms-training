@@ -6,7 +6,7 @@ namespace Tests.AlgorithmsTest
 {
     using System;
     using System.Linq;
-    using Algorithms.Sorting;
+    using Algorithms.SortingHelpers;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
@@ -23,6 +23,18 @@ namespace Tests.AlgorithmsTest
         {
             var (testSource, expectedResult) = PrepareTestSourceAndResult();
             var actualResult = testSource.BubbleSort((element1, element2) => element1 > element2);
+
+            Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
+        }
+
+        /// <summary>
+        /// Verifies the merging sort algorithm whether it is correct.
+        /// </summary>
+        [TestMethod]
+        public void VerifyResultFromMergingSortAlgorithm()
+        {
+            var (testSource, expectedResult) = PrepareTestSourceAndResult();
+            var actualResult = testSource.MergingSort((element1, element2) => element1 > element2);
 
             Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
         }

@@ -1,6 +1,7 @@
 # Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
+* [03/28/2022] Implement Merging Sort Algorithm by C#.
 * [03/28/2022] Implement Bubble Sort Algorithm by C#.
 * [03/28/2022] Update the test case (C#) of No.4 question to avoid duplicate and un-readable code.
 * [03/28/2022] Implement LeetCode No.4 question: [Median of Two Sorted Arrays](leetcode/questions/Question4.md)] by C#.

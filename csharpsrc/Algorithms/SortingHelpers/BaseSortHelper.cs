@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Algorithms.Sorting
+namespace Algorithms.SortingHelpers
 {
     using System;
     using System.Collections.Generic;

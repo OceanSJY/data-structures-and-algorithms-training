@@ -3,7 +3,8 @@
 
 ### Algorithms Training
 #### Bubble Sort Algorithms:
-* [C#] [BubbleSortHelper](csharpsrc/Algorithms/Sorting/BubbleSortHelper.cs)
+* [C#] [BubbleSortHelper](csharpsrc/Algorithms/SortingHelpers/BubbleSortHelper.cs)
+* [C#] [MergingSortHelper](csharpsrc/Algorithms/SortingHelpers/MergingSortHelper.cs)
 
 ***
 
