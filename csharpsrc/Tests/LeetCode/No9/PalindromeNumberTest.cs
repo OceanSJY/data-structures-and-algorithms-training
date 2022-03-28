@@ -14,7 +14,7 @@ namespace Tests.LeetCode.No9
     /// The test class of LeetCode No.9 question: Palindrome Number.
     /// </summary>
     [TestClass]
-    public class PalindromeNumberTest : BaseTest<bool>
+    public class PalindromeNumberTest : LeetCodeBaseTestCase<bool>
     {
         /// <summary>
         /// The test number.

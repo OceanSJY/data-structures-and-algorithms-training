@@ -15,7 +15,7 @@ namespace Tests.LeetCode.No4
     /// The test class of LeetCode No.4 question: Median of Two Sorted Arrays.
     /// </summary>
     [TestClass]
-    public class MedianOfTwoSortedArraysTest : BaseTest<double>
+    public class MedianOfTwoSortedArraysTest : LeetCodeBaseTestCase<double>
     {
         /// <summary>
         /// The first test nums array.

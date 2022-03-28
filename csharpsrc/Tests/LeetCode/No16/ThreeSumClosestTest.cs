@@ -14,7 +14,7 @@ namespace Tests.LeetCode.No16
     /// The test class of LeetCode No.16 question: Three Sum Closest.
     /// </summary>
     [TestClass]
-    public class ThreeSumClosestTest : BaseTest<int>
+    public class ThreeSumClosestTest : LeetCodeBaseTestCase<int>
     {
         /// <summary>
         /// The test number array.

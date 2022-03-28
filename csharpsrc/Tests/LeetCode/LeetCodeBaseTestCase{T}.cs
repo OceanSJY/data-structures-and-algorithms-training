@@ -1,14 +1,14 @@
-﻿// <copyright file="BaseTest{T}.cs" company="Ocean">
+﻿// <copyright file="LeetCodeBaseTestCase{T}.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests
+namespace Tests.LeetCode
 {
     /// <summary>
     /// The base test class which required generic output value.
     /// </summary>
     /// <typeparam name="T">The data type of return result.</typeparam>
-    public abstract class BaseTest<T>
+    public abstract class LeetCodeBaseTestCase<T>
     {
         /// <summary>
         /// Gets the result from solution.
