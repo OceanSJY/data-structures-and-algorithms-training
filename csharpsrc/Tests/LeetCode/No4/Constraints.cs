@@ -7,7 +7,7 @@ namespace Tests.LeetCode.No4
     /// <summary>
     /// The constraints of LeetCode No.4 question: Median of Two Sorted Arrays.
     /// </summary>
-    internal class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test array.

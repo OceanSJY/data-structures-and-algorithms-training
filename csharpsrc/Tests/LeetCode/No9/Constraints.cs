@@ -7,7 +7,7 @@ namespace Tests.LeetCode.No9
     /// <summary>
     /// The constraints of LeetCode No.9 question.
     /// </summary>
-    internal class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min value of test number.

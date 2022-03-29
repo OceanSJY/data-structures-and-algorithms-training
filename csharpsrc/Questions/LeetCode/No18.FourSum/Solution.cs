@@ -50,7 +50,7 @@ namespace Questions.LeetCode.No18.FourSum
 
                 return true;
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }
@@ -83,7 +83,7 @@ namespace Questions.LeetCode.No18.FourSum
 
             for (var index = 0; index < nums.Count; index++)
             {
-                var currentNumArray = new int[] { nums[index] };
+                var currentNumArray = new[] { nums[index] };
                 var restNumsArray = nums.Skip(index + 1).ToArray();
                 var restNumCombinations = this.GetCombinations(restNumsArray, size - 1, target - nums[index]);
 

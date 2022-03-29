@@ -15,7 +15,7 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
         /// <inheritdoc />
         public override double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            if (this.TryFindMedian(nums1, nums2, out var medianValue))
+            if (TryFindMedian(nums1, nums2, out var medianValue))
             {
                 return medianValue;
             }
@@ -23,7 +23,7 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
             var mergedSortedArray = nums1.Concat(nums2).ToArray();
             Array.Sort(mergedSortedArray);
 
-            return this.CalculateMedian(mergedSortedArray);
+            return CalculateMedian(mergedSortedArray);
         }
     }
 }

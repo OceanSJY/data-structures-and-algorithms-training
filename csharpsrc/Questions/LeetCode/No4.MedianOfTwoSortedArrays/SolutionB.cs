@@ -15,14 +15,14 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
         /// <inheritdoc />
         public override double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            if (this.TryFindMedian(nums1, nums2, out var medianValue))
+            if (TryFindMedian(nums1, nums2, out var medianValue))
             {
                 return medianValue;
             }
 
             var mergedSortedArray = MergeAndSortTwoArrays(nums1, nums2);
 
-            return this.CalculateMedian(mergedSortedArray);
+            return CalculateMedian(mergedSortedArray);
         }
 
         /// <summary>

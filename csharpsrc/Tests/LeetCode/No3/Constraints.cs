@@ -7,7 +7,7 @@ namespace Tests.LeetCode.No3
     /// <summary>
     /// The constraints of LeetCode No.3 question: Longest Substring without Repeating Characters.
     /// </summary>
-    internal class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test string.

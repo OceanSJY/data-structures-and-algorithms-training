@@ -37,7 +37,7 @@ namespace Questions.LeetCode.No18.FourSum
                     break;
                 }
 
-                if ((long)nums[firstIndex] + nums[nums.Length - 3] + nums[nums.Length - 2] + nums.Last() < target)
+                if ((long)nums[firstIndex] + nums[^3] + nums[^2] + nums.Last() < target)
                 {
                     continue;
                 }
@@ -55,7 +55,7 @@ namespace Questions.LeetCode.No18.FourSum
                         break;
                     }
 
-                    if ((long)nums[firstIndex] + nums[secondIndex] + nums[nums.Length - 2] + nums.Last() < target)
+                    if ((long)nums[firstIndex] + nums[secondIndex] + nums[^2] + nums.Last() < target)
                     {
                         continue;
                     }
@@ -69,7 +69,7 @@ namespace Questions.LeetCode.No18.FourSum
 
                         if (sum == target)
                         {
-                            results.Add(new int[]
+                            results.Add(new[]
                             {
                                 nums[firstIndex],
                                 nums[secondIndex],
