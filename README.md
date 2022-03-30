@@ -11,6 +11,9 @@
 #### Quick Sort Algorithm:
 * [C#] [QuickSortHelper](csharpsrc/Algorithms/SortingHelpers/QuickSortHelper.cs)
 
+#### Insertion Sort Algorithm:
+* [C#] [InsertionSortHelper](csharpsrc/Algorithms/SortingHelpers/InsertionSortHelper.cs)
+
 ***
 
 ### LeetCode Questions:

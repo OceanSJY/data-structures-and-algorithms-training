@@ -57,6 +57,18 @@ namespace Tests.AlgorithmsCases
         }
 
         /// <summary>
+        /// Verifies the insertion sort algorithm whether it is correct.
+        /// </summary>
+        [TestMethod]
+        public void VerifyResultFromInsertionSortAlgorithm()
+        {
+            var (testSource, expectedResult) = PrepareTestSourceAndResult();
+            var actualResult = testSource.InsertSort((element1, element2) => element1 > element2);
+
+            Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
+        }
+
+        /// <summary>
         /// Prepares the test source and expected result.
         /// </summary>
         /// <returns>The test source.</returns>
