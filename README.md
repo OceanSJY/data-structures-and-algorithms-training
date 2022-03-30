@@ -14,6 +14,9 @@
 #### Insertion Sort Algorithm:
 * [C#] [InsertionSortHelper](csharpsrc/Algorithms/SortingHelpers/InsertionSortHelper.cs)
 
+#### Selection Sort Algorithm:
+* [C#] [SelectionSortHelper](csharpsrc/Algorithms/SortingHelpers/SelectionSortHelper.cs)
+
 ***
 
 ### LeetCode Questions:
