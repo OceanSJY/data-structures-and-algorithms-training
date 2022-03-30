@@ -1,13 +1,12 @@
-﻿// <copyright file="MedianOfTwoSortedArraysTest.cs" company="Ocean">
+﻿// <copyright file="TestCase.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No4
+namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
 {
     using System;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No4.MedianOfTwoSortedArrays;
 
@@ -15,7 +14,7 @@ namespace Tests.LeetCode.No4
     /// The test class of LeetCode No.4 question: Median of Two Sorted Arrays.
     /// </summary>
     [TestClass]
-    public class MedianOfTwoSortedArraysTest : LeetCodeBaseTestCase<double>
+    public class TestCase : LeetCodeBaseTestCase<double>
     {
         /// <summary>
         /// The first test nums array.
@@ -53,9 +52,9 @@ namespace Tests.LeetCode.No4
         private readonly double[] expectedResultsFromOfficialAnswers;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MedianOfTwoSortedArraysTest"/> class.
+        /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
-        public MedianOfTwoSortedArraysTest()
+        public TestCase()
         {
             this.solutionA = new SolutionA();
             this.solutionB = new SolutionB();

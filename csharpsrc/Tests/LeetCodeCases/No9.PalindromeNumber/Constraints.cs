@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No9
+namespace Tests.LeetCodeCases.No9.PalindromeNumber
 {
     /// <summary>
     /// The constraints of LeetCode No.9 question.

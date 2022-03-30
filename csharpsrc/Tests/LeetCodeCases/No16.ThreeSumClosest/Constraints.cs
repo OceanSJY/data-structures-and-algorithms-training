@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No16
+namespace Tests.LeetCodeCases.No16.ThreeSumClosest
 {
     /// <summary>
     /// The constraints of LeetCode No.16 question: Three Sum Closest.

@@ -1,12 +1,11 @@
-﻿// <copyright file="LongestSubstringWithoutRepeatingCharactersTest.cs" company="Ocean">
+﻿// <copyright file="TestCase.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No3
+namespace Tests.LeetCodeCases.No3.LongestSubstringWithoutRepeatingCharacters
 {
     using System;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No3.LongestSubstringWithoutRepeatingCharacters;
 
@@ -14,7 +13,7 @@ namespace Tests.LeetCode.No3
     /// The test class of LeetCode No.3 question: Longest Substring without Repeating Characters.
     /// </summary>
     [TestClass]
-    public class LongestSubstringWithoutRepeatingCharactersTest : LeetCodeBaseTestCase<int>
+    public class TestCase : LeetCodeBaseTestCase<int>
     {
         /// <summary>
         /// The test string.
@@ -32,9 +31,9 @@ namespace Tests.LeetCode.No3
         private readonly IQuestion officialAnswer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LongestSubstringWithoutRepeatingCharactersTest"/> class.
+        /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
-        public LongestSubstringWithoutRepeatingCharactersTest()
+        public TestCase()
         {
             var random = new Random();
             var charArray = new char[random.Next(Constraints.MinLength, Constraints.MaxLength)];
