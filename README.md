@@ -8,6 +8,9 @@
 #### Merging Sort Algorithm:
 * [C#] [MergingSortHelper](csharpsrc/Algorithms/SortingHelpers/MergingSortHelper.cs)
 
+#### Quick Sort Algorithm:
+* [C#] [QuickSortHelper](csharpsrc/Algorithms/SortingHelpers/QuickSortHelper.cs)
+
 ***
 
 ### LeetCode Questions:

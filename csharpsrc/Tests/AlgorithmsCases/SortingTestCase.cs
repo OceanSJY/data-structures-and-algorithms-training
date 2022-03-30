@@ -16,6 +16,11 @@ namespace Tests.AlgorithmsCases
     public class SortingTestCase
     {
         /// <summary>
+        /// The length of test array.
+        /// </summary>
+        private const int TestArrayLength = 10000;
+
+        /// <summary>
         /// Verifies the bubble sort algorithm whether it is correct.
         /// </summary>
         [TestMethod]
@@ -40,13 +45,25 @@ namespace Tests.AlgorithmsCases
         }
 
         /// <summary>
+        /// Verifies the quick sort algorithm whether it is correct.
+        /// </summary>
+        [TestMethod]
+        public void VerifyResultFromQuickSortAlgorithm()
+        {
+            var (testSource, expectedResult) = PrepareTestSourceAndResult();
+            var actualResult = testSource.QuickSort((element1, element2) => element1 > element2);
+
+            Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
+        }
+
+        /// <summary>
         /// Prepares the test source and expected result.
         /// </summary>
         /// <returns>The test source.</returns>
         private static (int[] testSource, int[] expectedResult) PrepareTestSourceAndResult()
         {
             var random = new Random();
-            var testSource = new int[10000];
+            var testSource = new int[TestArrayLength];
 
             for (var index = 0; index < testSource.Length; index++)
             {
