@@ -1,6 +1,7 @@
 # Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
+* [03/30/2022] Implement Quick Sort Algorithm by C#.
 * [03/30/2022] Update the C# test projects.
 * [03/28/2022] Implement Merging Sort Algorithm by C#.
 * [03/28/2022] Implement Bubble Sort Algorithm by C#.
