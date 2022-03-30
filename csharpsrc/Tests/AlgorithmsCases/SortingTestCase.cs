@@ -69,6 +69,18 @@ namespace Tests.AlgorithmsCases
         }
 
         /// <summary>
+        /// Verifies the selection sort algorithm whether it is correct.
+        /// </summary>
+        [TestMethod]
+        public void VerifyResultFromSelectionSortAlgorithm()
+        {
+            var (testSource, expectedResult) = PrepareTestSourceAndResult();
+            var actualResult = testSource.SelectionSort((element1, element2) => element1 > element2);
+
+            Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
+        }
+
+        /// <summary>
         /// Prepares the test source and expected result.
         /// </summary>
         /// <returns>The test source.</returns>
