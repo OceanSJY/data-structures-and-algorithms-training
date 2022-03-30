@@ -1,12 +1,11 @@
-﻿// <copyright file="ThreeSumClosestTest.cs" company="Ocean">
+﻿// <copyright file="TestCase.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No16
+namespace Tests.LeetCodeCases.No16.ThreeSumClosest
 {
     using System;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No16.ThreeSumClosest;
 
@@ -14,7 +13,7 @@ namespace Tests.LeetCode.No16
     /// The test class of LeetCode No.16 question: Three Sum Closest.
     /// </summary>
     [TestClass]
-    public class ThreeSumClosestTest : LeetCodeBaseTestCase<int>
+    public class TestCase : LeetCodeBaseTestCase<int>
     {
         /// <summary>
         /// The test number array.
@@ -37,9 +36,9 @@ namespace Tests.LeetCode.No16
         private readonly IQuestion officialAnswer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ThreeSumClosestTest"/> class.
+        /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
-        public ThreeSumClosestTest()
+        public TestCase()
         {
             var random = new Random();
             this.testTarget = random.Next(Constraints.MinTargetValue, Constraints.MaxTargetValue);

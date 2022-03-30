@@ -1,12 +1,11 @@
-﻿// <copyright file="PalindromeNumberTest.cs" company="Ocean">
+﻿// <copyright file="TestCase.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No9
+namespace Tests.LeetCodeCases.No9.PalindromeNumber
 {
     using System;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No9.PalindromeNumber;
 
@@ -14,7 +13,7 @@ namespace Tests.LeetCode.No9
     /// The test class of LeetCode No.9 question: Palindrome Number.
     /// </summary>
     [TestClass]
-    public class PalindromeNumberTest : LeetCodeBaseTestCase<bool>
+    public class TestCase : LeetCodeBaseTestCase<bool>
     {
         /// <summary>
         /// The test number.
@@ -32,9 +31,9 @@ namespace Tests.LeetCode.No9
         private readonly IQuestion officialAnswer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PalindromeNumberTest"/> class.
+        /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
-        public PalindromeNumberTest()
+        public TestCase()
         {
             var random = new Random();
             this.testNumber = random.Next(Constraints.MinValue, Constraints.MaxValue);

@@ -53,8 +53,8 @@ namespace Algorithms.SortingHelpers
             var middleIndex = sourceArray.Length / 2;
             var firstPartArray = sourceArray.Take(middleIndex).ToArray();
             var lastPartArray = sourceArray.Skip(middleIndex).ToArray();
-            var sortedFirstPartArray = SortByMerging<T>(firstPartArray, comparator);
-            var sortedLastPartArray = SortByMerging<T>(lastPartArray, comparator);
+            var sortedFirstPartArray = SortByMerging(firstPartArray, comparator);
+            var sortedLastPartArray = SortByMerging(lastPartArray, comparator);
 
             return MergeSortedArrays(sortedFirstPartArray, sortedLastPartArray, comparator);
         }

@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode
+namespace Tests.LeetCodeCases
 {
     /// <summary>
     /// The base test class which required generic output value.

@@ -22,20 +22,20 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
         /// <param name="nums2">The second sorted array.</param>
         /// <param name="medianValue">The median value.</param>
         /// <returns>True means succeed to find the median.</returns>
-        protected virtual bool TryFindMedian(int[] nums1, int[] nums2, out double medianValue)
+        protected static bool TryFindMedian(int[] nums1, int[] nums2, out double medianValue)
         {
             medianValue = default;
 
             if (nums1 == null && nums2 != null)
             {
-                medianValue = this.CalculateMedian(nums2);
+                medianValue = CalculateMedian(nums2);
 
                 return true;
             }
 
             if (nums2 == null && nums1 != null)
             {
-                medianValue = this.CalculateMedian(nums1);
+                medianValue = CalculateMedian(nums1);
 
                 return true;
             }
@@ -48,7 +48,7 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
         /// </summary>
         /// <param name="sortedArray">The sorted array.</param>
         /// <returns>The media of a sorted array.</returns>
-        protected virtual double CalculateMedian(int[] sortedArray)
+        protected static double CalculateMedian(int[] sortedArray)
         {
             if (sortedArray.Length == 1)
             {

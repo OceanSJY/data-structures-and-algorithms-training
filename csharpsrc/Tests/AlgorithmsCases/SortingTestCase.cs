@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.AlgorithmsTest
+namespace Tests.AlgorithmsCases
 {
     using System;
     using System.Linq;

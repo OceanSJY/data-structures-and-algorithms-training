@@ -2,7 +2,7 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No18
+namespace Tests.LeetCodeCases.No18.FourSum
 {
     using System;
 

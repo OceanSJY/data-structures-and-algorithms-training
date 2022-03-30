@@ -2,12 +2,12 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No3
+namespace Tests.LeetCodeCases.No3.LongestSubstringWithoutRepeatingCharacters
 {
     /// <summary>
     /// The constraints of LeetCode No.3 question: Longest Substring without Repeating Characters.
     /// </summary>
-    internal class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test string.

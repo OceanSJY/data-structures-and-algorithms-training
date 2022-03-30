@@ -1,14 +1,13 @@
-﻿// <copyright file="FourSumTest.cs" company="Ocean">
+﻿// <copyright file="TestCase.cs" company="Ocean">
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No18
+namespace Tests.LeetCodeCases.No18.FourSum
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No18.FourSum;
 
@@ -16,7 +15,7 @@ namespace Tests.LeetCode.No18
     /// The test class of LeetCode No.18 question: Four Sum.
     /// </summary>
     [TestClass]
-    public class FourSumTest : LeetCodeBaseTestCase<IList<IList<int>>>
+    public class TestCase : LeetCodeBaseTestCase<IList<IList<int>>>
     {
         /// <summary>
         /// The test numbers.
@@ -39,9 +38,9 @@ namespace Tests.LeetCode.No18
         private readonly IQuestion officialAnswer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FourSumTest"/> class.
+        /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
-        public FourSumTest()
+        public TestCase()
         {
             var random = new Random();
             this.testTarget = random.Next(Constraints.MinValue, Constraints.MaxValue);

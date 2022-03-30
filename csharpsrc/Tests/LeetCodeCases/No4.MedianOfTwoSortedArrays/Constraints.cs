@@ -2,12 +2,12 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Tests.LeetCode.No4
+namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
 {
     /// <summary>
     /// The constraints of LeetCode No.4 question: Median of Two Sorted Arrays.
     /// </summary>
-    internal class Constraints
+    internal static class Constraints
     {
         /// <summary>
         /// The min length of test array.
