@@ -1,6 +1,7 @@
 # Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
+* [03/31/2022] Add the performance tests for sorting algorithms.
 * [03/30/2022] Implemet Selection Sort Algorithm by C#.
 * [03/30/2022] Implement Insertion Sort Algorithm by C#.
 * [03/30/2022] Implement Quick Sort Algorithm by C#.

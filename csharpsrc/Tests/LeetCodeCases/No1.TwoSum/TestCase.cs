@@ -7,6 +7,9 @@ namespace Tests.LeetCodeCases.No1.TwoSum
     using System;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
+#if RELEASE
+    using BenchmarkDotNet.Running;
+#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No1.TwoSum;
 
@@ -75,7 +78,7 @@ namespace Tests.LeetCodeCases.No1.TwoSum
         public void CheckTwoSumSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TwoSumTest>();
+            BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

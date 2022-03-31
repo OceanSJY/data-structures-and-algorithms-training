@@ -8,6 +8,9 @@ namespace Tests.LeetCodeCases.No18.FourSum
     using System.Collections.Generic;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
+#if RELEASE
+    using BenchmarkDotNet.Running;
+#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No18.FourSum;
 
@@ -75,7 +78,7 @@ namespace Tests.LeetCodeCases.No18.FourSum
         public void CheckFourSumSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<FourSumTest>();
+            BenchmarkRunner.Run<TestCase>();
 #endif
         }
 
