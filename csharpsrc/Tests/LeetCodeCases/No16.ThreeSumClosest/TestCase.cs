@@ -6,6 +6,9 @@ namespace Tests.LeetCodeCases.No16.ThreeSumClosest
 {
     using System;
     using BenchmarkDotNet.Attributes;
+#if RELEASE
+    using BenchmarkDotNet.Running;
+#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No16.ThreeSumClosest;
 
@@ -72,7 +75,7 @@ namespace Tests.LeetCodeCases.No16.ThreeSumClosest
         public void CheckThreeSumClosestPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<ThreeSumClosestTest>();
+            BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

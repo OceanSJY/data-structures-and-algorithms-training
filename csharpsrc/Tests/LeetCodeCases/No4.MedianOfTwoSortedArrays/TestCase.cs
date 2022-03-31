@@ -7,6 +7,9 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
     using System;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
+#if RELEASE
+    using BenchmarkDotNet.Running;
+#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No4.MedianOfTwoSortedArrays;
 
@@ -152,7 +155,7 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
         public void CheckMedianOfTwoSortedArraysSolutionsPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<MedianOfTwoSortedArraysTest>();
+            BenchmarkRunner.Run<TestCase>();
 #endif
         }
 
