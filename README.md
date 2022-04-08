@@ -59,3 +59,7 @@
 #### LeetCode No.18 question: [Four Sum](leetcode/questions/Question18.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No18.FourSum/Solution.cs), the result is correct however the performance is not good enough
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No18.FourSum/OfficialAnswer.cs)
+
+#### LeetCode No.20 question: [Valid Parentheses](leetcode/questions/Question20.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No20.ValidParentheses/Solution.cs), the solution is as same as the official answer
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No20.ValidParentheses/OfficialAnswer.cs)
