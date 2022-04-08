@@ -93,7 +93,7 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
         }
 
         /// <summary>
-        /// The solutions of LeetCode No.4 question: Median of Two Sorted Arrays.
+        /// Gets all solutions of LeetCode No.4 question: Median of Two Sorted Arrays.
         /// </summary>
         public IQuestion[] Solutions => new[]
         {
@@ -102,7 +102,7 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
         };
 
         /// <summary>
-        /// The official answers of LeetCode No.4 question: Median of Two Sorted Arrays.
+        /// Gets all official answers of LeetCode No.4 question: Median of Two Sorted Arrays.
         /// </summary>
         public IQuestion[] OfficialAnswers => new[]
         {
@@ -131,8 +131,10 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
             this.CurrentSolution = this.Solutions.First();
             var actualResultA = this.GetResultFromSolution();
 
-            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.First(), actualResultA);
-            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.Last(), actualResultA);
+            foreach (var expectedResult in this.expectedResultsFromOfficialAnswers)
+            {
+                Assert.AreEqual(expectedResult, actualResultA);
+            }
         }
 
         /// <summary>
@@ -144,8 +146,10 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
             this.CurrentSolution = this.Solutions.Last();
             var actualResultB = this.GetResultFromSolution();
 
-            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.First(), actualResultB);
-            Assert.AreEqual(this.expectedResultsFromOfficialAnswers.Last(), actualResultB);
+            foreach (var expectedResult in this.expectedResultsFromOfficialAnswers)
+            {
+                Assert.AreEqual(expectedResult, actualResultB);
+            }
         }
 
         /// <summary>
