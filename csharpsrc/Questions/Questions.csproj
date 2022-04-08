@@ -16,6 +16,7 @@
     <None Include="..\..\leetcode\questions\Question3.md" Link="LeetCode\No3.LongestSubstringWithoutRepeatingCharacters\Question3.md" />
     <None Include="..\..\leetcode\questions\Question4.md" Link="LeetCode\No4.MedianOfTwoSortedArrays\Question4.md" />
     <None Include="..\..\leetcode\questions\Question5.md" Link="LeetCode\No5.LongestPalindromicSubstring\Question5.md" />
+    <None Include="..\..\leetcode\questions\Question7.md" Link="LeetCode\No7.ReverseInteger\Question7.md" />
     <None Include="..\..\leetcode\questions\Question9.md" Link="LeetCode\No9.PalindromeNumber\Question9.md" />
   </ItemGroup>
 

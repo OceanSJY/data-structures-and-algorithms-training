@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No5.LongestPalindromicSubstring
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.5 question: Longest Palindromic Substring.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Gets the longest palindrome from the original string.
