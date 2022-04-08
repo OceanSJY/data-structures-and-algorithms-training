@@ -4,6 +4,7 @@
 
 namespace Questions.LeetCode.No5.LongestPalindromicSubstring
 {
+    using System;
     using System.Collections.Generic;
     using System.Text;
 
@@ -37,11 +38,45 @@ namespace Questions.LeetCode.No5.LongestPalindromicSubstring
 
                 if (rightIndex > index)
                 {
-
+                    var halfIndex = (leftIndex * 2) - index;
+                    var minPalindromeLength = Math.Min(palindromeLength.ToArray()[halfIndex], rightIndex - index);
+                    currentPalindromeLength = Expand(s, index - minPalindromeLength, index + minPalindromeLength);
                 }
+                else
+                {
+                    currentPalindromeLength = Expand(s, index, index);
+                }
+
+                palindromeLength.Add(currentPalindromeLength);
+
+                if (index + currentPalindromeLength > rightIndex)
+                {
+                    leftIndex = index;
+                    rightIndex = index + currentPalindromeLength;
+                }
+
+                if ((currentPalindromeLength * 2) + 1 <= endIndex - startIndex)
+                {
+                    continue;
+                }
+
+                startIndex = index - currentPalindromeLength;
+                endIndex = index + currentPalindromeLength;
             }
 
-            return s;
+            var longestPalindromeBuilder = new StringBuilder();
+            for (var index = startIndex; index <= endIndex; index++)
+            {
+                var currentChar = s[index];
+                if (currentChar.Equals('#'))
+                {
+                    continue;
+                }
+
+                longestPalindromeBuilder.Append(currentChar);
+            }
+
+            return longestPalindromeBuilder.ToString();
         }
 
         /// <summary>
@@ -50,7 +85,7 @@ namespace Questions.LeetCode.No5.LongestPalindromicSubstring
         /// <param name="s">The string.</param>
         /// <param name="leftIndex">The left index.</param>
         /// <param name="rightIndex">The right index.</param>
-        /// <returns></returns>
+        /// <returns>The length.</returns>
         private static int Expand(string s, int leftIndex, int rightIndex)
         {
             while (leftIndex >= 0 && rightIndex < s.Length && s[leftIndex].Equals(s[rightIndex]))

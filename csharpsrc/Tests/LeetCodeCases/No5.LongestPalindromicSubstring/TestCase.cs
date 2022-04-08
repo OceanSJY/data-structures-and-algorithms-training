@@ -4,7 +4,12 @@
 
 namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
 {
+    using System;
+    using System.Linq;
+#if RELEASE
     using BenchmarkDotNet.Attributes;
+#endif
+    using BenchmarkDotNet.Running;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No5.LongestPalindromicSubstring;
 
@@ -42,19 +47,27 @@ namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
         /// <summary>
         /// The test string.
         /// </summary>
-        private readonly string testString =
-            "mqizdjrfqtmcsruvvlhdgzfrmxgmmbguroxcbhalzggxhzwfznfkrdwsvzhieqvsrbyedqxwmnvovvnesphgddoikfwuujrhxwcrbttfbmlayrlmpromlzwzrkjkzdvdkpqtbzszrngczvgspzpfnvwuifzjdrmwfadophxscxtbavrhfkadhxrmvlmofbzqshqxazzwjextdpuszwgrxirmmlqitjjpijptmqfbggkwaolpbdglmsvlwdummsrdyjhmgrasrblpjsrpkkgknsucsshjuxunqiouzrdwwooxclutkrujpfebjpoodvhknayilcxjrvnykfjhvsikjabsdnvgguoiyldshbsmsrrlwmkfmyjbbsylhrusubcglaemnurpuvlyyknbqelmkkyamrcmjbncpafchacckhymtasylyfjuribqxsekbjkgzrvzjmjkquxfwopsbjudggnfbuyyfizefgxamocxjgkwxidkgursrcsjwwyeiymoafgyjlhtcdkgrikzzlenqgtdukivvdsalepyvehaklejxxmmoycrtsvzugudwirgywvsxqapxyjedbdhvkkvrxxsgifcldkspgdnjnnzfalaslwqfylmzvbxuscatomnmgarkvuccblpoktlpnazyeazhfucmfpalbujhzbykdgcirnqivdwxnnuznrwdjslwdwgpvjehqcbtjljnxsebtqujhmteknbinrloregnphwhnfidfsqdtaexencwzszlpmxjicoduejjomqzsmrgdgvlrfcrbyfutidkryspmoyzlgfltclmhaeebfbunrwqytzhuxghxkfwtjrfyxavcjwnvbaydjnarrhiyjavlmfsstewtxrcifcllnugldnfyswnsewqwnvbgtatccfeqyjgqbnufwttaokibyrldhoniwqsflvlwnjmffoirzmoxqxunkuepj";
+        private readonly string testString;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TestCase"/> class.
         /// </summary>
         public TestCase()
         {
+            var random = new Random();
+            var charArray = new char[random.Next(Constraints.MinLength, Constraints.MaxLength)];
+
+            for (var index = 0; index < charArray.Length; index++)
+            {
+                charArray[index] =
+                    Constraints.EnglishCharacters[random.Next(0, Constraints.EnglishCharacters.Length - 1)];
+            }
+
+            this.testString = new string(charArray);
             this.solution = new Solution();
             this.officialAnswerA = new OfficialAnswerA();
             this.officialAnswerB = new OfficialAnswerB();
             this.officialAnswerC = new OfficialAnswerC();
-
             this.expectedResultsFromOfficialAnswers = new[]
             {
                 this.officialAnswerA.LongestPalindrome(this.testString),
@@ -89,8 +102,27 @@ namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
 
             foreach (var expectedResult in this.expectedResultsFromOfficialAnswers)
             {
-                Assert.AreEqual(expectedResult, actualResult);
+                try
+                {
+                    Assert.AreEqual(expectedResult, actualResult);
+                }
+                catch (AssertFailedException)
+                {
+                    Assert.AreEqual(expectedResult.Length, actualResult.Length);
+                    Assert.AreEqual(actualResult, new string(actualResult.Reverse().ToArray()));
+                }
             }
+        }
+
+        /// <summary>
+        /// Checks the performance of MedianOfTwoSortedArrays A and B.
+        /// </summary>
+        [TestMethod]
+        public void CheckLongestPalindromicSubstringSolutionPerformance()
+        {
+#if RELEASE
+            BenchmarkRunner.Run<TestCase>();
+#endif
         }
 
         /// <inheritdoc />
