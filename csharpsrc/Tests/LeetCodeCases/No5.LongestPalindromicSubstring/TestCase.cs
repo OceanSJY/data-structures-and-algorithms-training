@@ -6,10 +6,10 @@ namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
 {
     using System;
     using System.Linq;
-#if RELEASE
     using BenchmarkDotNet.Attributes;
-#endif
+#if RELEASE
     using BenchmarkDotNet.Running;
+#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No5.LongestPalindromicSubstring;
 
