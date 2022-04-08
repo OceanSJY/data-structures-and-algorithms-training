@@ -35,7 +35,7 @@
 * [C#] [Official Answer B](csharpsrc/Questions/LeetCode/No4.MedianOfTwoSortedArrays/OfficialAnswerB.cs)
 
 #### LeetCode No.5 question: [Longest Palindrome Substring](leetcode/questions/Question5.md)
-* [C#] [Solution A](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/Solution.cs)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/Solution.cs)
 * [C#] [Official Answer A](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/OfficialAnswerA.cs)
 * [C#] [Official Answer B](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/OfficialAnswerB.cs)
 * [C#] [Official Answer C](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/OfficialAnswerC.cs)
