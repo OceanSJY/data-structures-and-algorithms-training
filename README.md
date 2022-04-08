@@ -40,6 +40,10 @@
 * [C#] [Official Answer B](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/OfficialAnswerB.cs)
 * [C#] [Official Answer C](csharpsrc/Questions/LeetCode/No5.LongestPalindromicSubstring/OfficialAnswerC.cs)
 
+#### LeetCode No.7 question: [Reverse Integer](leetcode/questions/Question7.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No7.ReverseInteger/Solution.cs)
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No7.ReverseInteger/OfficialAnswer.cs)
+
 #### LeetCode No.9 question: [Palindrome Number](leetcode/questions/Question9.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/OfficialAnswer.cs)
