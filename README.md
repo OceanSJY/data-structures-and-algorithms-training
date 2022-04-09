@@ -44,6 +44,10 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No7.ReverseInteger/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No7.ReverseInteger/OfficialAnswer.cs)
 
+#### LeetCode No.8 question: [String to Integer (atoi)](leetcode/questions/Question8.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No8.StringToInteger.Atoi/Solution.cs)
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No8.StringToInteger.Atoi/OfficialAnswer.cs)
+
 #### LeetCode No.9 question: [Palindrome Number](leetcode/questions/Question9.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No9.PalindromeNumber/OfficialAnswer.cs)
