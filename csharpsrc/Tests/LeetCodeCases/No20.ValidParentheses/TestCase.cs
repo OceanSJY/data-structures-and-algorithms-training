@@ -6,9 +6,6 @@ namespace Tests.LeetCodeCases.No20.ValidParentheses
 {
     using System;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No20.ValidParentheses;
 
@@ -70,7 +67,7 @@ namespace Tests.LeetCodeCases.No20.ValidParentheses
         public void CheckValidParenthesesSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

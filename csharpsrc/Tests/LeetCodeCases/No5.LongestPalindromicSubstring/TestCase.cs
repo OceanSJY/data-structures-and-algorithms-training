@@ -7,9 +7,6 @@ namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
     using System;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No5.LongestPalindromicSubstring;
 
@@ -121,7 +118,7 @@ namespace Tests.LeetCodeCases.No5.LongestPalindromicSubstring
         public void CheckLongestPalindromicSubstringSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

@@ -6,9 +6,6 @@ namespace Tests.LeetCodeCases.No3.LongestSubstringWithoutRepeatingCharacters
 {
     using System;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No3.LongestSubstringWithoutRepeatingCharacters;
 
@@ -70,7 +67,7 @@ namespace Tests.LeetCodeCases.No3.LongestSubstringWithoutRepeatingCharacters
         public void CheckLongestSubstringWithoutRepeatingCharactersSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

@@ -6,9 +6,6 @@ namespace Tests.LeetCodeCases.No7.ReverseInteger
 {
     using System;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No7.ReverseInteger;
 
@@ -63,7 +60,7 @@ namespace Tests.LeetCodeCases.No7.ReverseInteger
         public void CheckReverseIntegerSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 

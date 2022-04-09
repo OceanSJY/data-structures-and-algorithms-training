@@ -6,9 +6,6 @@ namespace Tests.LeetCodeCases.No9.PalindromeNumber
 {
     using System;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No9.PalindromeNumber;
 
@@ -63,7 +60,7 @@ namespace Tests.LeetCodeCases.No9.PalindromeNumber
         public void CheckPalindromeNumberSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 
