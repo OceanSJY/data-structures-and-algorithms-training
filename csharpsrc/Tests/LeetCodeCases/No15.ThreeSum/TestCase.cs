@@ -8,9 +8,6 @@ namespace Tests.LeetCodeCases.No15.ThreeSum
     using System.Collections.Generic;
     using System.Linq;
     using BenchmarkDotNet.Attributes;
-#if RELEASE
-    using BenchmarkDotNet.Running;
-#endif
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.No15.ThreeSum;
 
@@ -72,7 +69,7 @@ namespace Tests.LeetCodeCases.No15.ThreeSum
         public void CheckThreeSumSolutionPerformance()
         {
 #if RELEASE
-            BenchmarkRunner.Run<TestCase>();
+            BenchmarkDotNet.Running.BenchmarkRunner.Run<TestCase>();
 #endif
         }
 
