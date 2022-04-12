@@ -61,7 +61,7 @@ namespace Tests.LeetCodeCases.No20.ValidParentheses
         }
 
         /// <summary>
-        /// Checks the performance of valid parentheses  solution.
+        /// Checks the performance of valid parentheses solution.
         /// </summary>
         [TestMethod]
         public void CheckValidParenthesesSolutionPerformance()
