@@ -1,6 +1,7 @@
 ## Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
+* [04/13/2022] Implement the LeetCode No.23 question: [Merge K Sorted Lists](leetcode/questions/Question23.md) by C#.
 * [04/12/2022] Implement the LeetCode No.21 question: [Merge Two Sorted Lists](leetcode/questions/Question21.md) by C#.
 * [04/09/2022] Implement the LeetCode No.8 question: [String to Integer (atoi)](leetcode/questions/Question8.md) by C#.
 * [04/08/2022] Implement the LeetCode No.20 question: [Valid Parentheses](leetcode/questions/Question20.md) by C#.

@@ -150,7 +150,7 @@ namespace Tests.LeetCodeCases.No4.MedianOfTwoSortedArrays
         }
 
         /// <summary>
-        /// Checks the performance of MedianOfTwoSortedArrays A and B.
+        /// Checks the performance of MedianOfTwoSortedArrays solution A and B.
         /// </summary>
         [TestMethod]
         public void CheckMedianOfTwoSortedArraysSolutionsPerformance()
