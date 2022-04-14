@@ -18,7 +18,13 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
 
             foreach (var listNode in lists)
             {
-                priorityQueue.Enqueue(listNode, listNode.val);
+                var currentNode = listNode;
+
+                while (currentNode != null)
+                {
+                    priorityQueue.Enqueue(currentNode, currentNode.val);
+                    currentNode = currentNode.next;
+                }
             }
 
             return AssembleListNode(priorityQueue);

@@ -17,7 +17,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
         /// <summary>
         /// The max count of list nodes.
         /// </summary>
-        public const int MaxListNodeCount = 10000;
+        public const int MaxListNodeCount = 20;
 
         /// <summary>
         /// The min length of list.

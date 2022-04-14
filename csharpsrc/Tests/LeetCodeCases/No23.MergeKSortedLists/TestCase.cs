@@ -25,7 +25,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
         /// <summary>
         /// The solution B of LeetCode No.23 question: Merge K Sorted Lists.
         /// </summary>
-        private readonly IQuestion SolutionB;
+        private readonly IQuestion solutionB;
 
         /// <summary>
         /// The official answer A of LeetCode No.23 question: Merge K Sorted Lists.
@@ -58,7 +58,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
         public TestCase()
         {
             this.solutionA = new SolutionA();
-            this.SolutionB = new SolutionB();
+            this.solutionB = new SolutionB();
             this.officialAnswerA = new OfficialAnswerA();
             this.officialAnswerB = new OfficialAnswerB();
             this.officialAnswerC = new OfficialAnswerC();
@@ -87,7 +87,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
         public IQuestion[] Solutions => new[]
         {
             this.solutionA,
-            this.SolutionB,
+            this.solutionB,
         };
 
         /// <summary>

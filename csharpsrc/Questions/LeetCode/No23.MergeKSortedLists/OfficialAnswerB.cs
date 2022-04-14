@@ -4,6 +4,8 @@
 
 namespace Questions.LeetCode.No23.MergeKSortedLists
 {
+    using System.Collections.Generic;
+
     /// <summary>
     /// The official answer B of LeetCode No.23 question: Merge K Sorted Lists.
     /// </summary>
@@ -22,11 +24,11 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
         /// <param name="startIndex">The start index.</param>
         /// <param name="endIndex">The end index.</param>
         /// <returns>The merged result.</returns>
-        private static ListNode MergeListsInRange(ListNode[] lists, int startIndex, int endIndex)
+        private static ListNode MergeListsInRange(IReadOnlyList<ListNode> lists, int startIndex, int endIndex)
         {
             if (startIndex == endIndex)
             {
-                return lists[1];
+                return lists[startIndex];
             }
 
             if (startIndex > endIndex)
