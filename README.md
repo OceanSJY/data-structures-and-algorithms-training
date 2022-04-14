@@ -72,3 +72,10 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No21.MergeTwoSortedLists/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No21.MergeTwoSortedLists/OfficialAnswer.cs)
 * [C#] [Test Case](csharpsrc/Tests/LeetCodeCases/No21.MergeTwoSortedLists/TestCase.cs), it costs a while to pass the unit test since I was blocked by pointer of linked list.
+
+#### LeetCode No.23 question: [Merge K Sorted Lists](leetcode/questions/Question23.md)
+* [C#] [Solution A](csharpsrc/Questions/LeetCode/No23.MergeKSortedLists/SolutionA.cs)
+* [C#] [Solution B](csharpsrc/Questions/LeetCode/No23.MergeKSortedLists/SolutionB.cs)
+* [C#] [Official Answer A](csharpsrc/Questions/LeetCode/No23.MergeKSortedLists/OfficialAnswerA.cs)
+* [C#] [Official Answer B](csharpsrc/Questions/LeetCode/No23.MergeKSortedLists/OfficialAnswerB.cs)
+* [C#] [Official Answer C](csharpsrc/Questions/LeetCode/No23.MergeKSortedLists/OfficialAnswerC.cs), this answer uses PriorityQueue, and PriorityQueue is just supported in .NET 6.

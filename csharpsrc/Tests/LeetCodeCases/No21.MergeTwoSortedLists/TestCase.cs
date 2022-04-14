@@ -53,8 +53,8 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         public TestCase()
         {
             var random = new Random();
-            this.testList1 = GenerateListNodes(GenerateSortedNumbers(random));
-            this.testList2 = GenerateListNodes(GenerateSortedNumbers(random));
+            this.testList1 = GenerateListNode(GenerateSortedNumbers(random));
+            this.testList2 = GenerateListNode(GenerateSortedNumbers(random));
             this.clonedTestList1 = CloneListNode(this.testList1);
             this.clonedTestList2 = CloneListNode(this.testList2);
             this.solution = new Solution();
@@ -129,11 +129,11 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         /// </summary>
         /// <param name="sortedList">The sorted list.</param>
         /// <returns>The generated list nodes.</returns>
-        private static ListNode GenerateListNodes(IEnumerable<int> sortedList)
+        private static ListNode GenerateListNode(IEnumerable<int> sortedList)
         {
             return sortedList == null || !sortedList.Any()
                 ? null
-                : new ListNode(sortedList.First(), GenerateListNodes(sortedList.Skip(1).ToList()));
+                : new ListNode(sortedList.First(), GenerateListNode(sortedList.Skip(1).ToList()));
         }
 
         /// <summary>
