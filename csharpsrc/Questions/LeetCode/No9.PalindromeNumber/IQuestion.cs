@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No9.PalindromeNumber
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.9 question: Palindrome Number.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Checks the number whether it is palindrome.

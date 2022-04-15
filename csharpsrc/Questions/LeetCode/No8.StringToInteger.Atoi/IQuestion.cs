@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No8.StringToInteger.Atoi
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.8 question: String to Integer (atoi).
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Converts the string to integer.
