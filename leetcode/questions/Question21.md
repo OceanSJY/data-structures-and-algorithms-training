@@ -4,7 +4,7 @@
 #### Return the head of the merged linked list.
 
 #### Example 1:
-> ![Merge 2 sorted lists](Question21_Example1.jpg)
+> ![Merge 2 sorted lists](Question21_Example1.jpg)  
 > Input: list1 = [1,2,4], list2 = [1,3,4]  
 > Output: [1,1,2,3,4,4]
 

@@ -60,6 +60,10 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No16.ThreeSumClosest/Solution.cs), the result is correct however the performance is very poor
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No16.ThreeSumClosest/OfficialAnswer.cs)
 
+#### LeetCode No.17 question: [Letter Combinations of a Phone Number](leetcode/questions/Question17.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No17.LetterCombinationsOfAPhoneNumber/Solution.cs)
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No17.LetterCombinationsOfAPhoneNumber/OfficialAnswer.cs)
+
 #### LeetCode No.18 question: [Four Sum](leetcode/questions/Question18.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No18.FourSum/Solution.cs), the result is correct however the performance is not good enough
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No18.FourSum/OfficialAnswer.cs)

@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No21.MergeTwoSortedLists
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.21 question: Merge Two Sorted Lists.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Merges 2 sorted lists.

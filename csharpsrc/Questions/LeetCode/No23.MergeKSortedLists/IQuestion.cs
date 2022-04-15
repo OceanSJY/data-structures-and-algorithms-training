@@ -4,10 +4,12 @@
 
 namespace Questions.LeetCode.No23.MergeKSortedLists
 {
+    using Questions.Interfaces;
+
     /// <summary>
     /// The LeetCode No.23 question: Merge K Sorted Lists.
     /// </summary>
-    public interface IQuestion
+    public interface IQuestion : IBaseQuestion
     {
         /// <summary>
         /// Merges multi sorted lists to one list.
