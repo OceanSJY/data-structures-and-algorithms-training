@@ -30,8 +30,4 @@
     <ProjectReference Include="..\Questions\Questions.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="LeetCodeCases\No17.LetterCombinationsOfAPhoneNumber\" />
-  </ItemGroup>
-
 </Project>
