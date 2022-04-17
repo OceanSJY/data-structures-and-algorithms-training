@@ -9,6 +9,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
     using System.Linq;
     using BenchmarkDotNet.Attributes;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Questions.LeetCode.Common;
     using Questions.LeetCode.No23.MergeKSortedLists;
 
     /// <summary>

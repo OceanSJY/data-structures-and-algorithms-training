@@ -5,6 +5,7 @@
 namespace Questions.LeetCode.No23.MergeKSortedLists
 {
     using System.Collections.Generic;
+    using Questions.LeetCode.Common;
 
     /// <summary>
     /// The official answer C of LeetCode No.23 question: Merge K Sorted Lists.

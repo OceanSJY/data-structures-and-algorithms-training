@@ -9,6 +9,7 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
     using System.Linq;
     using BenchmarkDotNet.Attributes;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Questions.LeetCode.Common;
     using Questions.LeetCode.No21.MergeTwoSortedLists;
 
     /// <summary>
