@@ -11,6 +11,7 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Questions.LeetCode.Common;
     using Questions.LeetCode.No21.MergeTwoSortedLists;
+    using Tests.LeetCodeCases.Common;
 
     /// <summary>
     /// The test case of LeetCode No.21 question: Merge Two Sorted Lists.
@@ -53,9 +54,8 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         /// </summary>
         public TestCase()
         {
-            var random = new Random();
-            this.testList1 = GenerateListNode(GenerateSortedNumbers(random));
-            this.testList2 = GenerateListNode(GenerateSortedNumbers(random));
+            this.testList1 = ListNodeHelper.GenerateListNode(GenerateSortedNumbers());
+            this.testList2 = ListNodeHelper.GenerateListNode(GenerateSortedNumbers());
             this.clonedTestList1 = CloneListNode(this.testList1);
             this.clonedTestList2 = CloneListNode(this.testList2);
             this.solution = new Solution();
@@ -70,15 +70,8 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         {
             var expectedResult = this.GetResultFromOfficialAnswer();
             var actualResult = this.GetResultFromSolution();
-            var currentExpectedNode = expectedResult;
-            var currentActualNode = actualResult;
 
-            while (currentExpectedNode != null)
-            {
-                Assert.AreEqual(currentExpectedNode.val, currentActualNode.val);
-                currentExpectedNode = currentExpectedNode.next;
-                currentActualNode = currentActualNode.next;
-            }
+            Assert.IsTrue(ListNodeHelper.AreEquals(expectedResult, actualResult));
         }
 
         /// <summary>
@@ -111,30 +104,17 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         /// </summary>
         /// <param name="random">The random instance.</param>
         /// <returns>The sorted array.</returns>
-        private static IEnumerable<int> GenerateSortedNumbers(Random random)
+        private static IEnumerable<int> GenerateSortedNumbers()
         {
-            var testArray = new int[random.Next(Constraints.MinLength, Constraints.MaxLength)];
+            var randomNumbers = RandomNumberHelper.GenerateNumbers(
+                Constraints.MinLength,
+                Constraints.MaxLength,
+                Constraints.MinValue,
+                Constraints.MaxValue).ToArray();
 
-            for (var index = 0; index < testArray.Length; index++)
-            {
-                testArray[index] = random.Next(Constraints.MinValue, Constraints.MaxValue);
-            }
+            Array.Sort(randomNumbers);
 
-            Array.Sort(testArray);
-
-            return testArray;
-        }
-
-        /// <summary>
-        /// Generates list nodes by sorted list.
-        /// </summary>
-        /// <param name="sortedList">The sorted list.</param>
-        /// <returns>The generated list nodes.</returns>
-        private static ListNode GenerateListNode(IEnumerable<int> sortedList)
-        {
-            return sortedList == null || !sortedList.Any()
-                ? null
-                : new ListNode(sortedList.First(), GenerateListNode(sortedList.Skip(1).ToList()));
+            return randomNumbers;
         }
 
         /// <summary>

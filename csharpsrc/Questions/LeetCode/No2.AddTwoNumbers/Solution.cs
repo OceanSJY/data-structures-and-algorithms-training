@@ -20,7 +20,7 @@ namespace Questions.LeetCode.No2.AddTwoNumbers
         {
             var firstNumber = GetNumber(l1);
             var secondNumber = GetNumber(l2);
-            var sumResultReversedCharArray = (firstNumber + secondNumber).ToString(CultureInfo.InvariantCulture).Reverse().ToArray();
+            var sumResultReversedCharArray = (firstNumber + secondNumber).ToString("N0").Replace(",", string.Empty).Reverse().ToArray();
 
             return GenerateResultNode(sumResultReversedCharArray);
         }

@@ -31,8 +31,7 @@ namespace Questions.LeetCode.No2.AddTwoNumbers
 
                 if (headNode == null)
                 {
-                    headNode = new ListNode(sum % 10);
-                    tailNode = headNode;
+                    headNode = tailNode = new ListNode(sum % 10);
                 }
                 else
                 {
