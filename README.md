@@ -24,6 +24,10 @@
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No1.TwoSum/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No1.TwoSum/OfficialAnswer.cs)
 
+#### LeetCode No.2 question: [Add Two Numbers](leetcode/questions/Question2.md)
+* [C#] [Solution](csharpsrc/Questions/LeetCode/No2.AddTwoNumbers/Solution.cs), the solution is INCORRECT since it cannot handle the big number, but I still keep it
+* [C#] [Official Answer](csharpsrc/Questions/LeetCode/No2.AddTwoNumbers/OfficialAnswer.cs)
+
 #### LeetCode No.3 question: [Longest Substring without Repeating Characters](leetcode/questions/Question3.md)
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/Solution.cs)
 * [C#] [Official Answer](csharpsrc/Questions/LeetCode/No3.LongestSubstringWithoutRepeatingCharacters/OfficialAnswer.cs) 
