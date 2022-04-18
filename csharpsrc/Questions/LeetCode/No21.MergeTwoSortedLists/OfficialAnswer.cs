@@ -4,6 +4,8 @@
 
 namespace Questions.LeetCode.No21.MergeTwoSortedLists
 {
+    using Questions.LeetCode.Common;
+
     /// <summary>
     /// The official answer of LeetCode No.21 question: Merge Two Sorted Lists.
     /// </summary>

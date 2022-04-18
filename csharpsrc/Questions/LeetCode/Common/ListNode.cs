@@ -2,10 +2,10 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Questions.LeetCode.No21.MergeTwoSortedLists
+namespace Questions.LeetCode.Common
 {
     /// <summary>
-    /// The pre-defined list node of LeetCode No.21 question: Merge Two Sorted Lists.
+    /// The pre-defined singly-linked list.
     /// </summary>
     public class ListNode
     {

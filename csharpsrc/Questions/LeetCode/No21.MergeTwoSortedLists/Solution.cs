@@ -6,6 +6,7 @@ namespace Questions.LeetCode.No21.MergeTwoSortedLists
 {
     using System.Collections.Generic;
     using System.Linq;
+    using Questions.LeetCode.Common;
 
     /// <summary>
     /// The solution of LeetCode No.21 question: Merge Two Sorted Lists.

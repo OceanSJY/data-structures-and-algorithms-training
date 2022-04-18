@@ -9,7 +9,9 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
     using System.Linq;
     using BenchmarkDotNet.Attributes;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Questions.LeetCode.Common;
     using Questions.LeetCode.No23.MergeKSortedLists;
+    using Tests.LeetCodeCases.Common;
 
     /// <summary>
     /// The test case of LeetCode No.23 question: Merge K Sorted Lists.
@@ -70,7 +72,7 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
 
             for (var index = 0; index < this.testListNodes.Length; index++)
             {
-                this.testListNodes[index] = GenerateListNode(GenerateSortedNumbers(random));
+                this.testListNodes[index] = ListNodeHelper.GenerateListNode(GenerateSortedNumbers(random));
             }
 
             for (var index = 0; index < this.expectedResultsFromOfficialAnswer.Length; index++)
@@ -174,28 +176,16 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
         /// <returns>The sorted array.</returns>
         private static IEnumerable<int> GenerateSortedNumbers(Random random)
         {
-            var testArray = new int[random.Next(Constraints.MinLength, Constraints.MaxLength)];
+            var randomNumbers = RandomNumberHelper.GenerateNumbers(
+                Constraints.MinLength,
+                Constraints.MaxLength,
+                Constraints.MinValue,
+                Constraints.MaxValue,
+                random).ToArray();
 
-            for (var index = 0; index < testArray.Length; index++)
-            {
-                testArray[index] = random.Next(Constraints.MinValue, Constraints.MaxValue);
-            }
+            Array.Sort(randomNumbers);
 
-            Array.Sort(testArray);
-
-            return testArray;
-        }
-
-        /// <summary>
-        /// Generates list nodes by sorted list.
-        /// </summary>
-        /// <param name="sortedList">The sorted list.</param>
-        /// <returns>The generated list nodes.</returns>
-        private static ListNode GenerateListNode(IEnumerable<int> sortedList)
-        {
-            return sortedList == null || !sortedList.Any()
-                ? null
-                : new ListNode(sortedList.First(), GenerateListNode(sortedList.Skip(1).ToList()));
+            return randomNumbers;
         }
 
         /// <summary>
