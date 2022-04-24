@@ -19,6 +19,13 @@
 
 ***
 
+### Data Structure
+#### Link List:
+* [C#] [Link list definication](csharpsrc/DataStructures/LinkList/ListNode.cs)
+* [C#] [Reverse logic](csharpsrc/DataStructures/LinkList/LinkListHelper.cs)
+
+***
+
 ### LeetCode Questions:
 #### LeetCode No.1 question: [Two Sum](leetcode/questions/Question1.md) 
 * [C#] [Solution](csharpsrc/Questions/LeetCode/No1.TwoSum/Solution.cs)
