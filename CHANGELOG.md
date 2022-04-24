@@ -1,6 +1,7 @@
 ## Data Structures and Algorithms Training Change Log
 ### The change log of this repository.
 
+* [04/24/2022] Implement the data structure: LinkList and its reverse logic.
 * [04/18/2022] Implement the LeetCode No.2 question: [Add Two Numbers](leetcode/questions/Question2.md) by C#.
 * [04/14/2022] Implement the LeetCode No.17 question: [Letter Combination of a Phone Number](leetcode/questions/Question17.md) by C#.
 * [04/13/2022] Implement the LeetCode No.23 question: [Merge K Sorted Lists](leetcode/questions/Question23.md) by C#.
