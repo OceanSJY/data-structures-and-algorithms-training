@@ -62,8 +62,8 @@ namespace Questions.LeetCode.No21.MergeTwoSortedLists
 
             while (currentNode != null)
             {
-                values.Add(currentNode.val);
-                currentNode = currentNode.next;
+                values.Add(currentNode.Data);
+                currentNode = (ListNode)currentNode.Next;
             }
 
             return values;

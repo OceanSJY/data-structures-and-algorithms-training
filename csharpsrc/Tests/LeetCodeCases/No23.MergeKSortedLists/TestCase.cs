@@ -200,9 +200,9 @@ namespace Tests.LeetCodeCases.No23.MergeKSortedLists
 
             while (currentExpectedNode != null)
             {
-                Assert.AreEqual(currentExpectedNode.val, currentActualNode.val);
-                currentExpectedNode = currentExpectedNode.next;
-                currentActualNode = currentActualNode.next;
+                Assert.AreEqual(currentExpectedNode.Data, currentActualNode.Data);
+                currentExpectedNode = (ListNode)currentExpectedNode.Next;
+                currentActualNode = (ListNode)currentActualNode.Next;
             }
         }
     }

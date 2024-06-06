@@ -14,14 +14,12 @@ namespace Questions.LeetCode.No21.MergeTwoSortedLists
         /// <inheritdoc />
         public ListNode MergeTwoLists(ListNode list1, ListNode list2)
         {
-            if (list1 == null && list2 == null)
+            switch (list1)
             {
-                return null;
-            }
-
-            if (list1 == null)
-            {
-                return list2;
+                case null when list2 == null:
+                    return null;
+                case null:
+                    return list2;
             }
 
             if (list2 == null)
@@ -29,14 +27,14 @@ namespace Questions.LeetCode.No21.MergeTwoSortedLists
                 return list1;
             }
 
-            if (list1.val < list2.val)
+            if (list1.Data < list2.Data)
             {
-                list1.next = this.MergeTwoLists(list1.next, list2);
+                list1.Next = this.MergeTwoLists((ListNode)list1.Next, list2);
 
                 return list1;
             }
 
-            list2.next = this.MergeTwoLists(list1, list2.next);
+            list2.Next = this.MergeTwoLists(list1, (ListNode)list2.Next);
 
             return list2;
         }

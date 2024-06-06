@@ -37,8 +37,8 @@ namespace Questions.LeetCode.No2.AddTwoNumbers
 
             while (currentNode != null)
             {
-                numberStack.Push(currentNode.val);
-                currentNode = currentNode.next;
+                numberStack.Push(currentNode.Data);
+                currentNode = (ListNode)currentNode.Next;
             }
 
             double result = 0;

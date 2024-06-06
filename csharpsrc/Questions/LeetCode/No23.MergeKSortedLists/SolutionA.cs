@@ -51,8 +51,8 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
 
                 while (currentNode != null)
                 {
-                    values.Add(currentNode.val);
-                    currentNode = currentNode.next;
+                    values.Add(currentNode.Data);
+                    currentNode = (ListNode)currentNode.Next;
                 }
             }
 

@@ -15,7 +15,7 @@ namespace Questions.LeetCode.No20.ValidParentheses
         /// <summary>
         /// The pre-defined parenthesis groups.
         /// </summary>
-        private readonly Dictionary<char, char> parenthesisGroups = new()
+        private readonly Dictionary<char, char> parenthesisGroups = new ()
         {
             { '(', ')' },
             { '[', ']' },

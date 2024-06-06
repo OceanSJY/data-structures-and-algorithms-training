@@ -38,13 +38,13 @@ namespace Tests.LeetCodeCases.Common
 
             while (currentList1 != null)
             {
-                if (currentList1.val != currentList2.val)
+                if (currentList1.Data != currentList2.Data)
                 {
                     return false;
                 }
 
-                currentList1 = currentList1.next;
-                currentList2 = currentList2.next;
+                currentList1 = (ListNode)currentList1.Next;
+                currentList2 = (ListNode)currentList2.Next;
             }
 
             return currentList2 == null;

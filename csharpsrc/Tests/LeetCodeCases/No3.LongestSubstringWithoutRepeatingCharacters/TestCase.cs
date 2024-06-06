@@ -49,7 +49,7 @@ namespace Tests.LeetCodeCases.No3.LongestSubstringWithoutRepeatingCharacters
         }
 
         /// <summary>
-        /// Verifies the result from LongestSubstringWithoutRepeatingCharacters solution whether it is as same as the result from official answer. 
+        /// Verifies the result from LongestSubstringWithoutRepeatingCharacters solution whether it is as same as the result from official answer.
         /// </summary>
         [TestMethod]
         public void VerifyLongestSubstringWithoutRepeatingCharactersSolutionResult()

@@ -34,23 +34,23 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
 
             while (currentFirstNode != null && currentSecondNode != null)
             {
-                if (currentFirstNode.val < currentSecondNode.val)
+                if (currentFirstNode.Data < currentSecondNode.Data)
                 {
-                    tailNode.next = currentFirstNode;
-                    currentFirstNode = currentFirstNode.next;
+                    tailNode.Next = currentFirstNode;
+                    currentFirstNode = (ListNode)currentFirstNode.Next;
                 }
                 else
                 {
-                    tailNode.next = currentSecondNode;
-                    currentSecondNode = currentSecondNode.next;
+                    tailNode.Next = currentSecondNode;
+                    currentSecondNode = (ListNode)currentSecondNode.Next;
                 }
 
-                tailNode = tailNode.next;
+                tailNode = (ListNode)tailNode.Next;
             }
 
-            tailNode.next = currentFirstNode ?? currentSecondNode;
+            tailNode.Next = currentFirstNode ?? currentSecondNode;
 
-            return headNode.next;
+            return (ListNode)headNode.Next;
         }
     }
 }

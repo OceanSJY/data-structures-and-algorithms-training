@@ -23,8 +23,8 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
 
                 while (currentNode != null)
                 {
-                    priorityQueue.Enqueue(currentNode, currentNode.val);
-                    currentNode = currentNode.next;
+                    priorityQueue.Enqueue(currentNode, currentNode.Data);
+                    currentNode = (ListNode)currentNode.Next;
                 }
             }
 
@@ -43,7 +43,7 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
                 return null;
             }
 
-            return new ListNode(sortedListNodes.Dequeue().val, AssembleListNode(sortedListNodes));
+            return new ListNode(sortedListNodes.Dequeue().Data, AssembleListNode(sortedListNodes));
         }
     }
 }
