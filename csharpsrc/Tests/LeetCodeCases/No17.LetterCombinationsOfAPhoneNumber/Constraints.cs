@@ -22,7 +22,9 @@ namespace Tests.LeetCodeCases.No17.LetterCombinationsOfAPhoneNumber
         /// <summary>
         /// The valid phone numbers.
         /// </summary>
-        public static readonly char[] validPhoneNumbers = new
-            char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        public static readonly char[] ValidPhoneNumbers =
+        [
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+        ];
     }
 }

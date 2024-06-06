@@ -30,12 +30,12 @@ namespace Questions.LeetCode.No8.StringToInteger.Atoi
         /// <summary>
         /// The states dictionary.
         /// </summary>
-        private readonly Dictionary<string, string[]> states = new Dictionary<string, string[]>()
+        private readonly Dictionary<string, string[]> states = new ()
         {
-            { "start", new[] { "start", "signed", "in_number", "end" } },
-            { "signed", new[] { "end", "end", "in_number", "end" } },
-            { "in_number", new[] { "end", "end", "in_number", "end" } },
-            { "end", new[] { "end", "end", "end", "end" } },
+            { "start", ["start", "signed", "in_number", "end" ] },
+            { "signed", ["end", "end", "in_number", "end"] },
+            { "in_number", ["end", "end", "in_number", "end" ] },
+            { "end", ["end", "end", "end", "end" ] },
         };
 
         /// <inheritdoc />

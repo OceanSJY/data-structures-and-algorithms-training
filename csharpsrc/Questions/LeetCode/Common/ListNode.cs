@@ -2,32 +2,22 @@
 // Copyright (c) Ocean. All rights reserved.
 // </copyright>
 
-namespace Questions.LeetCode.Common
+namespace Questions.LeetCode.Common;
+
+using DataStructures.LinkList;
+
+/// <summary>
+/// The pre-defined singly-linked list.
+/// </summary>
+public class ListNode : ListNode<int>
 {
     /// <summary>
-    /// The pre-defined singly-linked list.
+    /// Initializes a new instance of the <see cref="ListNode"/> class.
     /// </summary>
-    public class ListNode
+    /// <param name="data">The value.</param>
+    /// <param name="next">The Next pointer.</param>
+    public ListNode(int data = 0, ListNode next = null)
+        : base(data, next)
     {
-        /// <summary>
-        /// The value.
-        /// </summary>
-        public int val;
-
-        /// <summary>
-        /// The next pointer.
-        /// </summary>
-        public ListNode next;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ListNode"/> class.
-        /// </summary>
-        /// <param name="val">The value.</param>
-        /// <param name="next">The next pointer.</param>
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

@@ -43,7 +43,7 @@ namespace Tests.LeetCodeCases.No17.LetterCombinationsOfAPhoneNumber
             for (var index = 0; index < testDigitsArray.Length; index++)
             {
                 testDigitsArray[index] =
-                    Constraints.validPhoneNumbers[random.Next(0, Constraints.validPhoneNumbers.Length - 1)];
+                    Constraints.ValidPhoneNumbers[random.Next(0, Constraints.ValidPhoneNumbers.Length - 1)];
             }
 
             this.testDigits = new string(testDigitsArray);

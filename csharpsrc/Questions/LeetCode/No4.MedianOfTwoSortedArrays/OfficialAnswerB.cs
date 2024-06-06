@@ -27,7 +27,7 @@ namespace Questions.LeetCode.No4.MedianOfTwoSortedArrays
             while (leftPointer <= rightPointer)
             {
                 var firstIndex = (leftPointer + rightPointer) / 2;
-                var secondIndex = (nums1.Length + nums2.Length + 1) / 2 - firstIndex;
+                var secondIndex = ((nums1.Length + nums2.Length + 1) / 2) - firstIndex;
 
                 var firstPrevValue = firstIndex == 0 ? int.MinValue : nums1[firstIndex - 1];
                 var firstValue = firstIndex == nums1.Length ? int.MaxValue : nums1[firstIndex];

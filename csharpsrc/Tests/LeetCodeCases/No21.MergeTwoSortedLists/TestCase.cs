@@ -124,7 +124,7 @@ namespace Tests.LeetCodeCases.No21.MergeTwoSortedLists
         /// <returns>The cloned list node.</returns>
         private static ListNode CloneListNode(ListNode listNode)
         {
-            return listNode == null ? null : new ListNode(listNode.val, CloneListNode(listNode.next));
+            return listNode == null ? null : new ListNode(listNode.Data, CloneListNode((ListNode)listNode.Next));
         }
     }
 }

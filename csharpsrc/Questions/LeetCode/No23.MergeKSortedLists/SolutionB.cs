@@ -41,14 +41,14 @@ namespace Questions.LeetCode.No23.MergeKSortedLists
                 return list1;
             }
 
-            if (list1.val < list2.val)
+            if (list1.Data < list2.Data)
             {
-                list1.next = MergeTwoSortedLists(list1.next, list2);
+                list1.Next = MergeTwoSortedLists((ListNode)list1.Next, list2);
 
                 return list1;
             }
 
-            list2.next = MergeTwoSortedLists(list1, list2.next);
+            list2.Next = MergeTwoSortedLists(list1, (ListNode)list2.Next);
 
             return list2;
         }
